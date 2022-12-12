@@ -16,7 +16,6 @@ type EvenResponse struct {
 	IsEven bool `json:"is_even"`
 }
 
-// GOARCH=amd64 GOOS=linux go build main.go
 func main() {
 	lambda.Start(IsEven)
 }
